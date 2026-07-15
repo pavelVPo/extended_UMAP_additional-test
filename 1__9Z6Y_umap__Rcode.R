@@ -61,22 +61,25 @@ data_ext$umap_2 <- protein_umap_ext$layout[,2]
 
 ## Plot the data
 umap_plot_basic <- ggplot(data, aes(x=umap_1, y=umap_2, color=chainid)) +
-	geom_point(size = .2) +
+	geom_point(size = .025, alpha = .4) +
 	coord_fixed() +
+	ggtitle("default UMAP procedure", subtitle = "n_neighbors = 15") +
 	theme_classic()
 umap_plot_basic
 umap_plot_ext <- ggplot(data_ext, aes(x=umap_1, y=umap_2, color=chainid)) +
-	geom_point(size = .2) +
+	geom_point(size = .025, alpha = .4) +
 	coord_fixed() +
+	ggtitle("extended UMAP procedure", subtitle = "n_neighbors = 15") +
 	theme_classic()
 umap_plot_ext
 umap_plot_ext_no <- ggplot(data_ext |> filter(chainid != "extension"), aes(x=umap_1, y=umap_2, color=chainid)) +
-	geom_point(size = .2) +
+	geom_point(size = .025, alpha = .4) +
 	coord_fixed() +
+	ggtitle("extended UMAP procedure", subtitle = "n_neighbors = 15, additional points not shown") +
 	theme_classic()
 umap_plot_ext_no
 
 ## Save the results
-ggsave(".../additional_examples/DRT/9Z6Y_umap_extended.png", plot = umap_plot_basic, scale = .7, width = 7, dpi = 300)
-ggsave(".../additional_examples/DRT/9Z6Y_umap_extended_w.png", plot = umap_plot_ext, scale = .7, width = 7, dpi = 300)
-ggsave(".../additional_examples/DRT/9Z6Y_umap_extended_wo.png", plot = umap_plot_ext_no, scale = .7, width = 7, dpi = 300)
+ggsave("C:/.../additional_examples/DRT/9Z6Y_umap_basic.png", plot = umap_plot_basic, width = 7, units = "in", dpi = 300)
+ggsave("C:/.../additional_examples/DRT/9Z6Y_umap_extended_w.png", plot = umap_plot_ext, width = 7, units = "in", dpi = 300)
+ggsave("C:/.../additional_examples/DRT/9Z6Y_umap_extended_wo.png", plot = umap_plot_ext_no, width = 7, units = "in", dpi = 300)
