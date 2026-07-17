@@ -9,3 +9,11 @@ Some results obtained using UMAP for R (https://cran.r-project.org/web/packages/
        - Results of the extended UMAP seem to be more refined.
 
        - Resulting 2D diagrams seem to be mirrored and rotated one against the other. 
+
+Given the second observation, it is relatively easy to align the figures to make their comparative analysis more manageable:
+
+      - Flip one of them LR
+
+      - Rotate until the point clouds will generally match
+
+The results are given in Figure 9Z6Y_9Z6Z_aligned_afterUMAP.png, imperfect alignment here is because of the global changes in structure: 9Z6Z has one longer and one shorter axes.
