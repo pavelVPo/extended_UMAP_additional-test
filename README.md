@@ -16,6 +16,6 @@ Some results obtained using UMAP for R (https://cran.r-project.org/web/packages/
 
         - Rotate until the point clouds will generally match
 
-    The results are given in Figure 9Z6Y_9Z6Z_aligned_afterUMAP.png, imperfect alignment here is because of the global changes in structure: 9Z6Z has one longer and one shorter axes, also some overlaps of the subunits having distinct chainids is no more visible.
+    The results are given in Figure 9Z6Y_9Z6Z_aligned_afterUMAP.png, imperfect alignment here is because of the global changes in structure: 9Z6Z has one longer and one shorter axes, also some overlaps of the subunits having distinct chainids is no more visible in comparison with 9Z6Y.
 
      **NB** Whether flipping the diagram is an appropriate transformation in this case is not discussed here from biological point of view. 
