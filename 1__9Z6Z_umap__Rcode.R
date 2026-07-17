@@ -5,7 +5,7 @@ library(umap)
 library(igraph)
 
 ## Input
-data_raw <- read.pdb(".../additional_examples/DRT/9Z6Y.pdb")
+data_raw <- read.pdb("C:/.../additional_examples/DRT/9Z6Z.pdb")
 
 ## Process the data
 data <- tibble(eleid = data_raw$atoms$eleid, recname = data_raw$atoms$recname, elename = data_raw$atoms$elename, resid = data_raw$atoms$resid,
@@ -43,7 +43,7 @@ extension <- extension_raw |> mutate(x1 = x1 + delta_1, x2 = x2 + delta_2, x3 = 
 extension <- extension |> anti_join(data, by = c("x1"="x1", "x2"="x2", "x3"="x3")) |> slice_sample(prop = .5)
 data_ext <- bind_rows(data, extension)
 # Visualize in 3D
-#plot_ly(x=extension$x1, y=extension$x2, z=extension$x3, type="scatter3d", size = .1)
+#plot_ly(x=data$x1, y=data$x2, z=data$x3, type="scatter3d", size = .025, color=data$chainid)
 #data_sample <- data |> slice_sample(prop = 0.1)
 #plot_ly(x=data_sample$x1, y=data_sample$x2, z=data_sample$x3, type="scatter3d", size = .1, color=data_sample$chainid)
 #plot_ly(x=data_ext$x1, y=data_ext$x2, z=data_ext$x3, type="scatter3d", size = .1, color=data_ext$chainid)
@@ -80,7 +80,6 @@ umap_plot_ext_no <- ggplot(data_ext |> filter(chainid != "extension"), aes(x=uma
 umap_plot_ext_no
 
 ## Save the results
-ggsave("C:/.../additional_examples/DRT/9Z6Y_umap_basic.png", plot = umap_plot_basic, width = 7, units = "in", dpi = 300)
-ggsave("C:/.../additional_examples/DRT/9Z6Y_umap_extended_w.png", plot = umap_plot_ext, width = 7, units = "in", dpi = 300)
-ggsave("C:/.../additional_examples/DRT/9Z6Y_umap_extended_wo.png", plot = umap_plot_ext_no, width = 7, units = "in", dpi = 300
-write_tsv(data_ext, "C:/.../additional_examples/DRT/9Z6Y_data.tsv")
+ggsave("C:/.../additional_examples/DRT/9Z6Z_umap_basic.png", plot = umap_plot_basic, width = 7, units = "in", dpi = 300)
+ggsave("C:/.../additional_examples/DRT/9Z6Z_umap_extended_w.png", plot = umap_plot_ext, width = 7, units = "in", dpi = 300)
+ggsave("C:/.../additional_examples/DRT/9Z6Z_umap_extended_wo.png", plot = umap_plot_ext_no, width = 7, units = "in", dpi = 300)
