@@ -6,14 +6,16 @@ Some results obtained using UMAP for R (https://cran.r-project.org/web/packages/
   
     Observations:
    
-       - Results of the extended UMAP seem to be more refined.
+         - Results of the extended UMAP seem to be more refined.
 
-       - Resulting 2D diagrams seem to be mirrored and rotated one against the other. 
+         - Resulting 2D diagrams seem to be mirrored and rotated one against the other. 
 
-Given the second observation, it is relatively easy to align the figures to make their comparative analysis more manageable:
+    Given the second observation, it is relatively easy to align the figures to make their comparative analysis more manageable:
 
-      - Flip one of them LR
+        - Flip one of them LR
 
-      - Rotate until the point clouds will generally match
+        - Rotate until the point clouds will generally match
 
-The results are given in Figure 9Z6Y_9Z6Z_aligned_afterUMAP.png, imperfect alignment here is because of the global changes in structure: 9Z6Z has one longer and one shorter axes, also some overlaps of the subunits having distinct chainids is no more visible.
+    The results are given in Figure 9Z6Y_9Z6Z_aligned_afterUMAP.png, imperfect alignment here is because of the global changes in structure: 9Z6Z has one longer and one shorter axes, also some overlaps of the subunits having distinct chainids is no more visible.
+
+     **NB** Whether flipping the diagram is an appropriate transformation in this case is not discussed here from biological point of view. 
