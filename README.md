@@ -16,4 +16,4 @@ Given the second observation, it is relatively easy to align the figures to make
 
       - Rotate until the point clouds will generally match
 
-The results are given in Figure 9Z6Y_9Z6Z_aligned_afterUMAP.png, imperfect alignment here is because of the global changes in structure: 9Z6Z has one longer and one shorter axes.
+The results are given in Figure 9Z6Y_9Z6Z_aligned_afterUMAP.png, imperfect alignment here is because of the global changes in structure: 9Z6Z has one longer and one shorter axes, also some overlaps of the subunits having distinct chainids is no more visible.
