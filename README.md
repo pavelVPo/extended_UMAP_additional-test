@@ -33,3 +33,13 @@ Some results obtained using UMAP for R (https://cran.r-project.org/web/packages/
 
 ![**Figure 3.** 5 snapshots of BPTI folding into 5 UMAP diagrams. Points correpsonds to atoms colored according to their belonging to distinct residues](BPTI_UMAP_folding_series.png)
 **Figure 3.** 5 snapshots of BPTI folding into 5 UMAP diagrams. Points correpsonds to atoms colored according to their belonging to distinct residues.
+
+As it can be seen from **Figure 3**, first snapshot is rather compact, maybe it is due to some technical reasons, thus, it is interesting to see the results without considering snapshot 1: **Figures 4** and **5**:
+
+![**Figure 4.** 4 snapshots of BPTI folding into one UMAP diagram. Points correpsonds to atoms colored according to their belonging to distinct residues](BPTI_UMAP_dynamics__wo1.png)
+**Figure 4.** 4 snapshots of BPTI folding into one UMAP diagram. Points correpsonds to atoms colored according to their belonging to distinct residues.
+
+
+
+![**Figure 5.** 4 snapshots of BPTI folding into 5 UMAP diagrams. Points correpsonds to atoms colored according to their belonging to distinct residues](BPTI_UMAP_folding_series__wo1.png)
+**Figure 5.** 4 snapshots of BPTI folding into 5 UMAP diagrams. Points correpsonds to atoms colored according to their belonging to distinct residues.
